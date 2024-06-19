@@ -7,46 +7,51 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-100 text-gray-900">
-    <header class="bg-white shadow">
+<body class="bg-gray-100 text-gray-900 font-sans">
+    <header class="bg-white shadow-md">
         <div class="container mx-auto p-6">
-            <h1 class="text-3xl font-bold">Book Cover Designs by Dewyan</h1>
+            <h1 class="text-4xl font-extrabold tracking-tight text-gray-900">
+                Book Cover Designs by <span class="text-blue-600">Dewyan</span>
+            </h1>
+            <p class="text-lg mt-2">Professional Book Cover Designer</p>
         </div>
     </header>
 
     <main class="container mx-auto p-6">
         <section id="about" class="my-12">
-            <h2 class="text-2xl font-bold mb-4">About Me</h2>
-            <p>Hi! ,I am a professional book cover designer based in Sri Lanka 🇱🇰. 
-
-I specialize in creating captivating and creative book covers that draw readers in. Below is a showcase of my work.</p>
+            <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+            <p class="text-lg leading-relaxed">Hi! I am a <span class="highlight">professional book cover designer</span> based in <span class="highlight">Sri Lanka 🇱🇰</span>. I specialize in creating <span class="highlight">captivating and creative</span> book covers that draw readers in. Below is a showcase of my work.</p>
         </section>
 
         <section id="portfolio" class="my-12">
-            <h2 class="text-2xl font-bold mb-4">My Work</h2>
+            <h2 class="text-3xl font-semibold mb-4">My Work</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Portfolio Items -->
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="assets/book-cover-1.jpg" alt="Book Cover 1" class="w-full">
-                    <div class="p-4">
-                        <h3 class="text-xl font-bold">Book Title 1</h3>
-                        <p class="text-gray-700">A brief description of the book cover.</p>
-                    </div>
+                <div class="card">
+                    <a href="portfolio/book-cover-1.html">
+                        <img src="assets/book-cover-1.jpg" alt="Book Cover 1" class="w-full h-64 object-cover rounded-t-lg">
+                        <div class="p-4">
+                            <h3 class="text-xl font-bold">Book Title 1</h3>
+                            <p class="text-gray-700">A brief description of the book cover.</p>
+                        </div>
+                    </a>
                 </div>
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="assets/book-cover-2.jpg" alt="Book Cover 2" class="w-full">
-                    <div class="p-4">
-                        <h3 class="text-xl font-bold">Book Title 2</h3>
-                        <p class="text-gray-700">A brief description of the book cover.</p>
-                    </div>
+                <div class="card">
+                    <a href="portfolio/book-cover-2.html">
+                        <img src="assets/book-cover-2.jpg" alt="Book Cover 2" class="w-full h-64 object-cover rounded-t-lg">
+                        <div class="p-4">
+                            <h3 class="text-xl font-bold">Book Title 2</h3>
+                            <p class="text-gray-700">A brief description of the book cover.</p>
+                        </div>
+                    </a>
                 </div>
                 <!-- Add more portfolio items as needed -->
             </div>
         </section>
 
         <section id="contact" class="my-12">
-            <h2 class="text-2xl font-bold mb-4">Contact Me</h2>
-            <form action="https://formspree.io/f/your-form-id" method="POST" class="bg-white shadow-lg rounded-lg p-6">
+            <h2 class="text-3xl font-semibold mb-4">Contact Me</h2>
+            <form action="https://formspree.io/f/your-form-id" method="POST" class="bg-white shadow-md rounded-lg p-6">
                 <div class="mb-4">
                     <label for="name" class="block text-gray-700">Name</label>
                     <input type="text" id="name" name="name" required class="w-full p-2 border border-gray-300 rounded">
@@ -59,7 +64,7 @@ I specialize in creating captivating and creative book covers that draw readers 
                     <label for="message" class="block text-gray-700">Message</label>
                     <textarea id="message" name="message" rows="4" required class="w-full p-2 border border-gray-300 rounded"></textarea>
                 </div>
-                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Send</button>
+                <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Send</button>
             </form>
         </section>
     </main>
