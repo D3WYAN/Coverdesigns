@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Cover Designs by Dewyan</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <header class="bg-white shadow">
+        <div class="container mx-auto p-6">
+            <h1 class="text-3xl font-bold">Book Cover Designs by Dewyan</h1>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-6">
+        <section id="about" class="my-12">
+            <h2 class="text-2xl font-bold mb-4">About Me</h2>
+            <p>Hi! ,I am a professional book cover designer based in Sri Lanka 🇱🇰. 
+
+I specialize in creating captivating and creative book covers that draw readers in. Below is a showcase of my work.</p>
+        </section>
+
+        <section id="portfolio" class="my-12">
+            <h2 class="text-2xl font-bold mb-4">My Work</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Portfolio Items -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="assets/book-cover-1.jpg" alt="Book Cover 1" class="w-full">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold">Book Title 1</h3>
+                        <p class="text-gray-700">A brief description of the book cover.</p>
+                    </div>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="assets/book-cover-2.jpg" alt="Book Cover 2" class="w-full">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold">Book Title 2</h3>
+                        <p class="text-gray-700">A brief description of the book cover.</p>
+                    </div>
+                </div>
+                <!-- Add more portfolio items as needed -->
+            </div>
+        </section>
+
+        <section id="contact" class="my-12">
+            <h2 class="text-2xl font-bold mb-4">Contact Me</h2>
+            <form action="https://formspree.io/f/your-form-id" method="POST" class="bg-white shadow-lg rounded-lg p-6">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700">Name</label>
+                    <input type="text" id="name" name="name" required class="w-full p-2 border border-gray-300 rounded">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700">Email</label>
+                    <input type="email" id="email" name="email" required class="w-full p-2 border border-gray-300 rounded">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700">Message</label>
+                    <textarea id="message" name="message" rows="4" required class="w-full p-2 border border-gray-300 rounded"></textarea>
+                </div>
+                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-white shadow mt-12">
+        <div class="container mx-auto p-6 text-center">
+            <p>&copy; 2024 Book Cover Designs by Dewyan. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
